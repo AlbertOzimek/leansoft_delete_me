@@ -27,3 +27,11 @@
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<mat-checkbox
+        #showDetails
+        [checked]="isChecked"
+        (change)="onChange($event)">Show details</mat-checkbox>
+<div *ngIf="showDetails.checked">
+    Some details ...
+</div>

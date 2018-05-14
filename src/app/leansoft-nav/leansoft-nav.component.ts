@@ -9,12 +9,7 @@ import {Observable} from 'rxjs';
 })
 export class LeansoftNavComponent {
     isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
-    isChecked = true;
 
     constructor(private breakpointObserver: BreakpointObserver) {
-    }
-
-    onChange($event) {
-        console.log('checkbox clicked');
     }
 }

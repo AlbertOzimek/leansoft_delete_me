@@ -12,14 +12,16 @@ import {
     MatIconModule,
     MatListModule,
     MatRadioModule,
-    MatCardModule
+    MatCardModule, MatMenuModule
 } from '@angular/material';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        LeansoftNavComponent
+        LeansoftNavComponent,
+        ShowcaseComponent
     ],
     imports: [
         BrowserModule,
@@ -29,7 +31,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         MatButtonModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule, MatCheckboxModule, MatRadioModule, MatCardModule
+        MatListModule, MatMenuModule, MatCheckboxModule, MatRadioModule, MatCardModule
     ],
     providers: [],
     bootstrap: [AppComponent]

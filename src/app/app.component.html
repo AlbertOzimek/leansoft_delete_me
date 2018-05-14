@@ -1,15 +1,2 @@
 <leansoft-nav></leansoft-nav>
-<mat-checkbox
-        #showDetails
-        [checked]="isChecked"
-        (change)="onChange($event)">Show details</mat-checkbox>
-<div *ngIf="showDetails.checked">
-    Some details ...
-</div>
-
-<br>
-
-<mat-radio-group>
-    <mat-radio-button value="1">Option 1</mat-radio-button>
-    <mat-radio-button value="2">Option 2</mat-radio-button>
-</mat-radio-group>
+<app-showcase></app-showcase>

@@ -5,7 +5,15 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LeansoftNavComponent} from './leansoft-nav/leansoft-nav.component';
 import {LayoutModule} from '@angular/cdk/layout';
-import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
+import {
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatRadioModule,
+    MatCardModule
+} from '@angular/material';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
@@ -21,7 +29,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         MatButtonModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule, MatCheckboxModule
+        MatListModule, MatCheckboxModule, MatRadioModule, MatCardModule
     ],
     providers: [],
     bootstrap: [AppComponent]

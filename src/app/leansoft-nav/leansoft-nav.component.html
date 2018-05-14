@@ -23,15 +23,8 @@
         *ngIf="(isHandset | async)!.matches">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Leansoft</span>
+      <div class="flex-spacer"></div>
+      <span class="logo-leansoft">Leansoft</span>
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<mat-checkbox
-        #showDetails
-        [checked]="isChecked"
-        (change)="onChange($event)">Show details</mat-checkbox>
-<div *ngIf="showDetails.checked">
-    Some details ...
-</div>
